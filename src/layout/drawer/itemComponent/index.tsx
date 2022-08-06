@@ -1,19 +1,4 @@
-import {
-  AutoStories,
-  Calculate,
-  Create,
-  Description,
-  Exposure,
-  Factory,
-  Home,
-  Logout,
-  NewReleases,
-  NotificationsActive,
-  Paid,
-  PeopleAlt,
-  PersonAdd,
-  TableChart,
-} from "@mui/icons-material";
+import { CalendarMonth, Home, Logout, PersonAdd } from "@mui/icons-material";
 import { Collapse, ListItemText, MenuList, Typography } from "@mui/material";
 import { ItemButton, ItemIcon, ListItemSubMenu } from "./styles";
 
@@ -43,30 +28,10 @@ function Menus({
     switch (icon) {
       case "personAdd":
         return <PersonAdd />;
-      case "new_releases":
-        return <NewReleases />;
-      case "paid":
-        return <Paid />;
-      case "factory":
-        return <Factory />;
-      case "peopleAlt":
-        return <PeopleAlt />;
-      case "create":
-        return <Create />;
-      case "description":
-        return <Description />;
-      case "notificationsActive":
-        return <NotificationsActive />;
-      case "autoStories":
-        return <AutoStories />;
-      case "calculate":
-        return <Calculate />;
+      case "calendar_month":
+        return <CalendarMonth />;
       case "logout":
         return <Logout />;
-      case "tableChart":
-        return <TableChart />;
-      case "exposure":
-        return <Exposure style={{ transform: "rotate(180deg)" }} />;
       default:
         return <Home />;
     }

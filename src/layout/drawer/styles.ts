@@ -27,7 +27,12 @@ export const Container = styled(Drawer)`
 `;
 
 export const Header = styled.div`
-  min-height: 56px;
+  border-bottom: solid 1px #fff;
+  min-height: 48px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* @media (min-width: 0px) and (orientation: landscape) {
     min-height: 48px;
   }

@@ -6,6 +6,11 @@ export default [
     router: "/",
   },
   {
+    title: "Calendário",
+    icon: "calendar_month",
+    router: "/agenda",
+  },
+  {
     title: "Exemplos",
     icon: "personAdd",
     router: null,

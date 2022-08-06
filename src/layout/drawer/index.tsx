@@ -1,5 +1,5 @@
 import { BoxIcon, BoxLogo, Container, Header } from "./styles";
-import { Divider, IconButton, MenuList } from "@mui/material";
+import { Divider, IconButton, MenuList, Typography } from "@mui/material";
 import {
   Home,
   KeyboardDoubleArrowLeft,
@@ -35,17 +35,10 @@ export default function Sidebar({ width, expanded, onToggle }: IProps) {
         }}
       >
         <Header>
-          <BoxIcon positionIcon={expanded}>
-            <IconButton size="small" onClick={onToggle}>
-              {!expanded ? (
-                <KeyboardDoubleArrowRight />
-              ) : (
-                <KeyboardDoubleArrowLeft />
-              )}
-            </IconButton>
-          </BoxIcon>
-          <BoxLogo>{expanded ? <Home /> : <Home />}</BoxLogo>
+          <Typography>Miza</Typography>
+          {/* <BoxLogo>{expanded ? <Home /> : <Home />}</BoxLogo> */}
         </Header>
+
         <MenuList sx={{ p: 0 }}>
           {menuListItens.map((menu, index) =>
             menu.divisor ? (

@@ -16,7 +16,11 @@ function Layout({ children }: { children: any }) {
 
   return (
     <Container>
-      <AppBar width={drawerwidth} expanded={sidebarOpen} />
+      <AppBar
+        width={drawerwidth}
+        expanded={sidebarOpen}
+        onToggle={handleToggleSidebar}
+      />
       <Drawer
         width={drawerwidth}
         expanded={sidebarOpen}
