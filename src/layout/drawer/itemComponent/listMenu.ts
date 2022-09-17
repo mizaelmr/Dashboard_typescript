@@ -6,9 +6,19 @@ export default [
     router: "/",
   },
   {
+    title: "Pacientes",
+    icon: "persons",
+    router: "/pacientes",
+  },
+  {
     title: "Calendário",
     icon: "calendar_month",
     router: "/agenda",
+  },
+  {
+    title: "Financias",
+    icon: "calendar_month",
+    router: "/financias",
   },
   {
     title: "Exemplos",
